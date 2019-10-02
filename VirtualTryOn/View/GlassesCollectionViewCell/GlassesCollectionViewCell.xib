@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GlassesCollectionViewCell" customModule="VirtualTryOn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="228"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="228"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GW5-6M-tEF">
+                        <rect key="frame" x="0.0" y="0.0" width="453" height="228"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye_glasses_1" translatesAutoresizingMaskIntoConstraints="NO" id="8IU-wS-2cQ">
+                                <rect key="frame" x="0.0" y="8" width="453" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Bue-Ft-e6W"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saylor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-Yz-7mA">
+                                <rect key="frame" x="191" y="170" width="71.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                <color key="textColor" red="0.28951179981231689" green="0.28951179981231689" blue="0.43035687023485208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJe-49-lFJ">
+                                <rect key="frame" x="415" y="165.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Org-iy-UUe"/>
+                                    <constraint firstAttribute="width" constant="30" id="meq-by-fcB"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="heart"/>
+                                <state key="selected" image="heart-red"/>
+                                <connections>
+                                    <action selector="likeButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="V27-Jh-rim"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8IU-wS-2cQ" secondAttribute="trailing" id="69q-13-CUU"/>
+                            <constraint firstItem="fXg-Yz-7mA" firstAttribute="centerX" secondItem="GW5-6M-tEF" secondAttribute="centerX" id="dFa-Lm-xqo"/>
+                            <constraint firstItem="8IU-wS-2cQ" firstAttribute="top" secondItem="GW5-6M-tEF" secondAttribute="top" constant="8" id="h7F-nT-G71"/>
+                            <constraint firstItem="gJe-49-lFJ" firstAttribute="centerY" secondItem="fXg-Yz-7mA" secondAttribute="centerY" id="hGp-2Z-LnF"/>
+                            <constraint firstItem="8IU-wS-2cQ" firstAttribute="leading" secondItem="GW5-6M-tEF" secondAttribute="leading" id="rmH-pM-G4S"/>
+                            <constraint firstAttribute="trailing" secondItem="gJe-49-lFJ" secondAttribute="trailing" constant="8" id="y0Q-Cm-6Y1"/>
+                            <constraint firstItem="fXg-Yz-7mA" firstAttribute="top" secondItem="8IU-wS-2cQ" secondAttribute="bottom" constant="12" id="zHN-lF-Pw1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GW5-6M-tEF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ewi-jB-fIh"/>
+                <constraint firstAttribute="trailing" secondItem="GW5-6M-tEF" secondAttribute="trailing" id="LGg-Ag-g69"/>
+                <constraint firstItem="GW5-6M-tEF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MvX-m5-i2B"/>
+                <constraint firstAttribute="bottom" secondItem="GW5-6M-tEF" secondAttribute="bottom" id="r2n-cs-0cd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="453" height="228"/>
+            <connections>
+                <outlet property="glassImageView" destination="8IU-wS-2cQ" id="ZAA-qD-yGK"/>
+                <outlet property="glassName" destination="fXg-Yz-7mA" id="Iw3-wx-pPV"/>
+                <outlet property="likeButton" destination="gJe-49-lFJ" id="GB3-dz-bv0"/>
+            </connections>
+            <point key="canvasLocation" x="181.8840579710145" y="158.70535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="eye_glasses_1" width="450" height="202"/>
+        <image name="heart" width="50" height="50"/>
+        <image name="heart-red" width="60" height="60"/>
+    </resources>
+</document>
