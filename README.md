@@ -1,2 +1,4 @@
-# Virtual-Try-On-on-iPhone
-Virtual try on of Glasses on iPhone X and above
+# VirtualTryOn
+Virtually try custom eyeglasses on your smartphone.
+
+**Supported Devices**: > iPhone X
